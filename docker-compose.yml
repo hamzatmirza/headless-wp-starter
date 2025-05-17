@@ -16,7 +16,7 @@ services:
         container_name: wp-headless
         depends_on:
             - db-headless
-
+        env_file: ./.env
         user: www-data
         volumes:
             - ./wordpress:/var/www/html
